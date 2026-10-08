@@ -25,10 +25,11 @@ jobs:
         uses: gradle/gradle-build-action@v3
 
       - name: Build Debug APK
-        run: gradle assembleDebug --no-daemon
+        run: gradle assembleDebug 
 
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: app-debug
-          path: app/build/outputs/apk/debug/app-debug.apk
+      - - name: Setup Gradle
+  uses: gradle/gradle-build-action@v3
+  with:
+    gradle-version: 8.2
+        name: app-debug
+       path: app/build/outputs/apk/debug/app-debug.apk
