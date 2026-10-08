@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_base"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:paddingTop="48dp"
+        android:paddingBottom="32dp">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_header"
+            android:padding="22dp"
+            android:layout_marginBottom="24dp"
+            android:elevation="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚡ Subway Enabler v3.70.0"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.03"
+                android:shadowColor="#80000000"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="8"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Made by Gufran Khan"
+                android:textColor="#F0F0FF"
+                android:textSize="12sp"
+                android:letterSpacing="0.1"
+                android:layout_marginTop="6dp"
+                android:alpha="0.95"/>
+        </LinearLayout>
+
+        <!-- INVENTORY SECTION -->
+        <TextView
+            style="@style/SectionTitle"
+            android:text="INVENTORY"/>
+
+        <LinearLayout
+            android:id="@+id/containerInventory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <!-- CURRENCY SECTION -->
+        <TextView
+            style="@style/SectionTitle"
+            android:text="CURRENCY"/>
+
+        <LinearLayout
+            android:id="@+id/containerCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <!-- COSMETICS SECTION -->
+        <TextView
+            style="@style/SectionTitle"
+            android:text="COSMETICS"/>
+
+        <LinearLayout
+            android:id="@+id/containerCosmetics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <!-- MASTER SECTION -->
+        <TextView
+            style="@style/SectionTitle"
+            android:text="MASTER"/>
+
+        <LinearLayout
+            android:id="@+id/containerMaster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <!-- PROFILE SECTION -->
+        <TextView
+            style="@style/SectionTitle"
+            android:text="PROFILE"/>
+
+        <LinearLayout
+            android:id="@+id/containerProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <!-- STATUS TEXT -->
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"/>
+
+        <!-- FOOTER -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[K]anha × Gufran Khan"
+            android:textColor="@color/text_secondary"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:letterSpacing="0.2"/>
+
+    </LinearLayout>
+</ScrollView>
